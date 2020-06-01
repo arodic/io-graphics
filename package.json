@@ -2,8 +2,9 @@
   "name": "three-ui",
   "version": "1.0.0-rc.1",
   "description": "UI system for three.js built with Io-GUI.",
-  "jsnext:main": "build/three-ui.js",
+  "main": "build/three-ui.js",
   "module": "build/three-ui.js",
+  "type": "module",
   "files": [
     "src",
     "build/*.js",
@@ -11,16 +12,7 @@
     "LICENSE",
     "README.md"
   ],
-  "jspm": {
-    "files": [
-      "src",
-      "build/*.js",
-      "package.json",
-      "LICENSE",
-      "README.md"
-    ],
-    "directories": {}
-  },
+  "sideEffects": false,
   "scripts": {
     "lint": "eslint src",
     "rollup": "rollup -c",
@@ -32,18 +24,7 @@
     "type": "git",
     "url": "git+https://github.com/iogui/three-ui.git"
   },
-  "keywords": [
-    "io",
-    "gui",
-    "ui",
-    "ux",
-    "navigation",
-    "menu",
-    "inspector",
-    "computer graphics",
-    "three",
-    "threejs"
-  ],
+  "keywords": ["iogui", "inspector", "three", "threejs"],
   "author": "Aleksandar (Aki) Rodić",
   "license": "MIT",
   "bugs": {
